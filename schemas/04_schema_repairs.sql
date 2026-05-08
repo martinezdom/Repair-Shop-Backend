@@ -7,7 +7,7 @@ CREATE TABLE repairs(
     cost DECIMAL(10, 2),
     vehicle_id BIGINT NOT NULL,
     mechanic_id BIGINT NOT NULL,
+    deleted BOOLEAN NOT NULL DEFAULT FALSE,
     CONSTRAINT fk_repairs_vehicles FOREIGN KEY (vehicle_id) REFERENCES vehicles(id),
-    CONSTRAINT fk_repairs_users FOREIGN KEY (mechanic_id) REFERENCES users(id),
-    deleted BOOLEAN NOT NULL DEFAULT FALSE
+    CONSTRAINT fk_repairs_users FOREIGN KEY (mechanic_id) REFERENCES users(id)
 );
