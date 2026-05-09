@@ -1,13 +1,14 @@
 package io.github.martinezdom.repairshop.dtos;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public class VehicleUpdateDTO {
     @NotBlank
     private String brand;
     @NotBlank
     private String model;
-    @NotBlank
+    @NotNull
     private Integer year;
 
     public String getBrand() {
