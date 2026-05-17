@@ -36,7 +36,7 @@ La aplicación lee la base de datos desde variables de entorno:
 Ejemplo:
 
 ```text
-DB_URL=jdbc:mysql://localhost:3306/repair_shop_db?useSSL=false&serverTimezone=UTC
+DB_URL=jdbc:mysql://localhost:3306/repairshop?useSSL=false&serverTimezone=UTC
 DB_USER=root
 DB_PASSWORD=example1234
 JWT_SECRET=repairshop-demo-secret
@@ -59,7 +59,7 @@ Credenciales demo usadas en Docker:
 
 ## Ejecución sin Docker
 
-1. Crea la base de datos `repair_shop_db`.
+1. Crea la base de datos `repairshop`.
 2. Ejecuta los scripts de la carpeta `schemas/`.
 3. Define las variables de entorno.
 4. Arranca la app con Maven:
